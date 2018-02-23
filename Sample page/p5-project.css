@@ -1,0 +1,53 @@
+body
+{
+	width:60%;
+	max-width:800px;
+	min-width: 300px;
+	/*max-width and min-width will fix the max and min size the body can be of and can not go beyond even if the size of browser window changes */
+	border:solid 20px #bdc3c7;
+	padding: 20px 20px 20px 20px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-left: 16%;
+}
+
+.first
+{
+	border-left: solid 5px #bdc3c7;
+	padding-left: 2px;
+}
+
+.date
+{
+	text-transform: uppercase;
+	letter-spacing: 0.3rem; /*or give size in pixel*/
+	color: #3498db;
+	font-weight: bold;
+}
+
+.main
+{
+	/*border-bottom: solid 3px #bdc3c7;*/
+	margin-bottom: 30px;
+
+	/*or use a <hr> tag in html file as horizontal rule for a line*/
+}
+
+h2
+{
+	text-transform: capitalize;
+	color: #2c3e50;
+
+}
+
+hr 
+{ 
+	border: 0; 
+	height: 0; /* Firefox... */ 
+	box-shadow: 0 0 10px 1px black; 
+	margin-bottom: 40px;
+} 
+hr:after 
+{ /* Not really supposed to work, but does */ 
+	content: "\00a0"; /* Prevent margin collapse */ 
+}
