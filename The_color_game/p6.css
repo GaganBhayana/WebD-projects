@@ -1,0 +1,96 @@
+body
+{
+	background-color: #232323;
+	margin: 0;
+	font-family: "Arial";/*"Montserrat","Avenir";*/
+}
+
+.square
+{
+	width: 30%;
+	/*background-color: purple;*/
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+	border-radius: 15%; 
+	/*Here by writing background we are instructing that do the transition only when background changes*/
+	transition: background 0.6s;
+
+	/*Adding support for other browers for transition*/
+	--webkit-transition: background 0.6s; /*for safari web browser*/
+	-mpz-transition: background 0.6s; /*for mozilla*/
+}
+
+
+#container
+{
+	margin: 20px auto; /*0 margin on top and auto for left and right*/
+	max-width: 600px;
+}
+
+h1
+{
+	color: White;
+	text-align: center;
+	background-color: steelblue;
+	margin: 0;
+	font-weight: normal;
+	text-transform: uppercase;
+	line-height: 1.1;
+	padding: 20px 0; /*9(top-bottom),(left-right)*/
+}
+
+/*span
+{
+	color: White;
+}*/
+
+#stripe
+{
+	background-color: White;
+	height: 30px;
+	text-align: center;
+}
+
+.selected
+{
+	background: blue;
+}
+
+#colorDisplay
+{
+	font-size: 200%;
+}
+
+button
+{
+	border: none;
+	background: none;
+	text-transform: uppercase;
+	height: 100%; /*take 100% of the containing element*/
+	font-weight: 700;
+	color: steelblue;
+	letter-spacing: 1px;
+	font-size: inherit; /*they inherit the font size*/
+	/*This will apply the transition properties to all the buttons
+	By writing 'all' we are we are saying that do the transition when any property of button changes
+	2nd parameter is the time of transition*/
+	transition: all 0.3s;
+
+	/*This property not working for me*/
+	outline:none ; /*to remove any outline when any button is selected*/
+}
+
+#message
+{
+	/*Here we first made this span as an inline blickk i.e.block within the same line and then we changed it's width to 20%
+	Therefore even when there are no contents in this block still it will cover atlest this much area*/
+	display: inline-block;
+	width: 20%; 
+}
+
+button:hover
+{
+	color: white;
+	background: steelblue;
+}
